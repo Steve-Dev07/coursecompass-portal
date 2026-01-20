@@ -1,0 +1,33 @@
+{
+  "name": "coursecompass-portal-backend",
+  "version": "0.0.0",
+  "description": "Backend component of CourseCompass.",
+  "license": "MIT",
+  "type": "module",
+  "main": "server.ts",
+  "scripts": {
+    "test": "vitest run",
+    "dev": "dotenv -e .env.development -- nodemon",
+    "start": "dotenv -e .env.production -- npx tsx src/server.ts"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.0.9",
+    "@types/supertest": "^6.0.3",
+    "dotenv-cli": "^11.0.0",
+    "nodemon": "^3.1.11",
+    "supertest": "^7.2.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.17"
+  }
+}
